@@ -1,0 +1,110 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #0d1117;
+    color: #ffffff;
+  }
+  
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #0ef;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0ef;
+    letter-spacing: 2px;
+  }
+  
+  /* NAVIGATION */
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+  }
+  
+  /* MAIN CONTENT */
+  .content {
+    padding: 120px 50px 50px;
+    min-height: 80vh;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #0ef;
+  }
+  
+  /* ANIMATIONS */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      padding: 100px 20px 50px;
+    }
+  }
+  
