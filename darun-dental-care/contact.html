@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden { display: none; }
+    </style>
+    <style>
+        /* Global Styles */
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger" class="hamburger-icon">
+            &#9776; <!-- Hamburger icon -->
+          </div>
+      </header>
+      
+      <main>
+        <section>
+
+    <form id="contact-form">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit" id="send-btn">Send</button>
+        <!-- <span id="loader" class="hidden">Sending...</span> -->
+
+        <p id="success-message" class="hidden" style="color: green;"></p>
+        <p id="error-message" class="hidden" style="color: red;"></p>
+    </form>
+        </section></main>
+
+</body>
+</html>
